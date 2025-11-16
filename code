@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractive E-Commerce Portal</title>
+
+    <style>
+        /* ----------- GLOBAL STYLES ---------- */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f6f8fc;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ----------- NAVBAR ---------- */
+        .navbar {
+            background: linear-gradient(90deg, #5ab2ff, #5f8bff);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .navbar h1 {
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        .menu a {
+            margin: 0 16px;
+            font-size: 16px;
+            color: white;
+            font-weight: 500;
+        }
+
+        .menu a:hover {
+            color: #ffe9ae;
+        }
+
+        /* ----------- HERO SECTION ---------- */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff') center/cover no-repeat;
+            height: 55vh;
+            display: flex;
+            padding-left: 50px;
+            align-items: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 3px 10px rgba(0,0,0,0.7);
+        }
+
+        /* ----------- SECTION TITLE ---------- */
+        .section-title {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 28px;
+            font-weight: 700;
+            color: #4b5fff;
+        }
+
+        /* ----------- PRODUCT GRID ---------- */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 22px rgba(0,0,0,0.2);
+        }
+
+        .button {
+            background: #5ab2ff;
+            border: none;
+            padding: 10px 15px;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 8px;
+            font-size: 15px;
+        }
+        .button:hover {
+            background: #4c98db;
+        }
+
+        /* ---------- FOOTER ---------- */
+        .footer {
+            background: #5f8bff;
+            padding: 20px;
+            margin-top: 40px;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <h1>ShopEase</h1>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#about">About Us</a>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        Welcome to Your Smart Shopping!
+    </div>
+
+    <!-- PRODUCTS -->
+    <h2 class="section-title" id="products">Popular Products</h2>
+
+    <div class="products">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop">
+            <h3>Laptop Pro X</h3>
+            <p>₹55,999</p>
+            <button class="button">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Phone">
+            <h3>Smartphone A10</h3>
+            <p>₹22,499</p>
+            <button class="button">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1585386959984-a41552231693" alt="Headphones">
+            <h3>Noise Cancelling Headphones</h3>
+            <p>₹7,999</p>
+            <button class="button">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Camera">
+            <h3>DSLR Camera</h3>
+            <p>₹35,999</p>
+            <button class="button">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <p style="text-align:center; padding:10px;">
+            Email: support@shopease.com | Phone: +91 9876543210
+        </p>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+        <h2 class="section-title">About Us</h2>
+        <p style="text-align:center; padding:0 30px 40px;">
+            ShopEase is a modern, easy-to-use shopping website offering high-quality products with a smooth and simple interface.
+        </p>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        © 2025 ShopEase. All rights reserved.
+    </div>
+
+</body>
+</html>
